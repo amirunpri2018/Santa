@@ -81,7 +81,7 @@ def cnn_model_fn(features, labels, mode):
     if mode == tf.estimator.ModeKeys.TRAIN:
 
         optimizer = optimizers.SantaOptimizer(
-            eta=1e-7,
+            eta=1e-8,
             gamma=0.5,
             sigma=0.999,
             const=5e+2,
