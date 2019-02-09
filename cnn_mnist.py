@@ -84,7 +84,7 @@ def cnn_model_fn(features, labels, mode):
             eta=1e-6,
             gamma=0.5,
             sigma=0.999,
-            const=1e+8,
+            const=5e+2,
             epsilon=1e-8,
             burnin=10000
         )
