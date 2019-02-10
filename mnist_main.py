@@ -39,7 +39,7 @@ def main(unused_argv):
             ),
             steps=None
         )
-    ) for name, optimizer in [("eve", opt.SantaOptimizer()), ("adam", tf.train.AdamOptimizer())]])
+    ) for name, optimizer in [("santa", opt.SantaOptimizer()), ("adam", tf.train.AdamOptimizer())]])
 
 
 if __name__ == "__main__":
