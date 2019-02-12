@@ -81,7 +81,7 @@ class SantaOptimizer(optimizer.Optimizer):
 
     def __init__(self, eta=1e-6, gamma=0.5, sigma=0.999, epsilon=1e-8,
                  burnin=10000, const=1000, use_locking=False, name="Santa"):
-        """Construct a new Eve optimizer.
+        """Construct a new Santa optimizer.
         Args:
           alpha1: A Tensor or a floating point value.  
             The learning rate.
@@ -97,8 +97,8 @@ class SantaOptimizer(optimizer.Optimizer):
           name: Optional name for the operations created when applying gradients.
             Defaults to "Santa".
         @compatibility(eager)
-        When eager execution is enabled, `alpha1`, `beta1`, `beta2`, `beta3`, `clip_value`, 
-        and `epsilon` can each be a callable that takes no arguments and returns the
+        When eager execution is enabled, `eta`, `gamma`, `sigma`, `epsilon`, `burnin`, 
+        and `const` can each be a callable that takes no arguments and returns the
         actual value to use. This can be useful for changing these values across
         different invocations of optimizer functions.
         @end_compatibility
